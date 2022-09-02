@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="icon"
+        href="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_youtube-512.png">
+
+    <style>
+        *,
+        *:after,
+        *:before {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: url("app/assets/svg/0001.svg");
+            display: grid;
+            place-items: center;
+
+        }
+
+        .the-frame {
+            display: block;
+            position: relative;
+            top: 60px;
+        }
+
+        /* .phone {
+            box-shadow: 15px 21px 40px rgba(0, 0, 0, 0.32);
+            display: flex;
+            border-radius: 36px;
+            background: #26282b;
+            position: relative;
+            border: 2px solid #33353b;
+        } */
+
+
+
+        .phone_3df {
+            border-radius: 40px;
+            overflow: hidden;
+            height: 790px;
+            width: 380px;
+            box-shadow: 15px 21px 40px rgba(0, 0, 0, 0.2);
+            border: 1px solid #fff;
+            background: #e6e8ed;
+            padding: 6px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1220px) {
+            .phone_3df {
+                height: 720px;
+                width: 380px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="the-frame">
+        <div class="phone">
+            <iframe src="app/Intro.html" class="phone_3df"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

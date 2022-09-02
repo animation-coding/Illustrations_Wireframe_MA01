@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+    <!-- Slick css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick-theme.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <!-- Style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
+<!-- Head End -->
+
+<!-- Body Start -->
+
+<body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+        <div id="wifi-loader">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+                <circle class="back" cx="43" cy="43" r="40"></circle>
+                <circle class="front" cx="43" cy="43" r="40"></circle>
+                <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+                <circle class="back" cx="30" cy="30" r="27"></circle>
+                <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+            <div class="text" data-text="LOADING..."></div>
+        </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="header">
+        <div>
+            <span class="nav-bar">
+                <i class="fi fi-rr-apps"></i>
+            </span>
+            <h1 class="title-color font-lg">About us</h1>
+        </div>
+        <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Sidebar Start -->
+    <aside>
+        <a href="javascript:void(0)" class="overlay-sidebar"></a>
+        <div class="header-sidebar">
+            <a href="javascript:void(0)" class="user-panel">
+                <img src="assets/images/avtars/avtar.png" class="img-fluid user-img" alt="">
+                <span>Animation Coding</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-right icli">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </a>
+            <div class="sidebar-content">
+                <ul class="link-section">
+                    <li>
+                        <div>
+                            <div class="content toggle-sec w-100">
+                                <div>
+                                    <h4 class="font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-moon me-4">
+                                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                            </svg></span>
+                                        Dark Mode
+                                    </h4>
+                                </div>
+                                <div class="button toggle-btn ms-auto">
+                                    <input id="darkButton" type="checkbox" class="checkbox">
+                                    <div class="knobs">
+                                        <span></span>
+                                    </div>
+                                    <div class="layer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="content toggle-sec w-100">
+                                <div>
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+
+                                            <img src="assets/images/icon_02/bell.svg" class="me-4"
+                                                alt="rtl"></span>Notification
+                                    </h4>
+                                </div>
+                                <div class="button toggle-btn ms-auto">
+                                    <input id="notificationButton" type="checkbox" class="checkbox">
+                                    <div class="knobs">
+                                        <span></span>
+                                    </div>
+                                    <div class="layer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="profile-setting.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+
+                                            <img src="assets/images/icon_02/setting.svg" class="me-4"
+                                                alt="rtl"></span>Profile
+                                        Setting
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reset-password.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+
+                                            <img src="assets/images/icon_02/eye2.svg" class="me-4"
+                                                alt="eye2"></span>Change
+                                        Password
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#language"
+                            aria-controls="language">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <img src="assets/images/icon_02/glob2.svg" class="me-4"
+                                                alt="rtl"></span>Language
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog-home.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <img src="assets/images/icon_02/blog.svg" class="me-4"
+                                                alt="rtl" /></span>Blog
+                                        page
+                                        <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-list.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <img src="assets/images/icon_02/element.svg" class="me-4"
+                                                alt="rtl"></span>Post<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- Sidebar End -->
+
+
+
+
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large about-us">
+        <!-- Banner Start -->
+        <div class="banner-box">
+            <div>
+                <img src="assets/svg/about-us.svg" class="img-fluid abousimg" alt="about-us" />
+            </div>
+        </div>
+        <!-- Banner End -->
+
+        <!-- Who We Are Start -->
+        <section class="intro p-tb-md">
+            <h2 class="title-2">Who We Are ?</h2>
+            <p class="content-color pera">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+            <p class="content-color pera">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
+            </p>
+            <div class="card-box">
+                <ul>
+                    <li>
+                        <span class="font-md"><i data-feather="check-circle"></i>2500+ Work Done</span>
+                        <div class="shape2 shape2-left">
+                            <span class="circle">&nbsp;</span>
+                            <span class="line"></span>
+                            <span class="circle">&nbsp;</span>
+                        </div>
+                        <div class="shape2 shape2-right">
+                            <span class="circle">&nbsp;</span>
+                            <span class="line"></span>
+                            <span class="circle">&nbsp;</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="font-md"><i data-feather="map-pin"></i>20+ Branches</span>
+                        <div class="shape2 shape2-left">
+                            <span class="circle">&nbsp;</span>
+                            <span class="line"></span>
+                            <span class="circle">&nbsp;</span>
+                        </div>
+                        <div class="shape2 shape2-right">
+                            <span class="circle">&nbsp;</span>
+                            <span class="line"></span>
+                            <span class="circle">&nbsp;</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="font-md"><i data-feather="coffee"></i>500+ Cup of Coffee</span>
+                        <div class="shape2 shape2-left">
+                            <span class="circle">&nbsp;</span>
+                            <span class="line"></span>
+                            <span class="circle">&nbsp;</span>
+                        </div>
+                        <div class="shape2 shape2-right">
+                            <span class="circle">&nbsp;</span>
+                            <span class="line"></span>
+                            <span class="circle">&nbsp;</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Who We Are End -->
+
+        <section>
+            <!-- Thumbnail Slider Start -->
+            <div class="wrap p-tb-sm">
+                <h2 class="title-2 m-b-title1">Top Design</h2>
+                <div class="banner-section thumbnail-slider">
+                    <!-- Banner Start -->
+                    <div>
+                        <a href="javascript:void(0)" class="banner-box">
+                            <div class="img-box">
+                                <img src="assets/images/blog/card/image4.jpg" class="img-fluid" alt="banner" />
+                            </div>
+                            <h2 class="font-md">Music Blogs</h2>
+                        </a>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div>
+                        <a href="javascript:void(0)" class="banner-box">
+                            <div class="img-box">
+                                <img src="assets/images/blog/card/image5.jpg" class="img-fluid" alt="banner" />
+                            </div>
+                            <h2 class="font-md">Beach Blogs</h2>
+                        </a>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div>
+                        <a href="javascript:void(0)" class="banner-box">
+                            <div class="img-box">
+                                <img src="assets/images/blog/card/image3.jpg" class="img-fluid" alt="banner" />
+                            </div>
+                            <h2 class="font-md">Movie Blogs</h2>
+                        </a>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div>
+                        <a href="javascript:void(0)" class="banner-box">
+                            <div class="img-box">
+                                <img src="assets/images/blog/card/image2.jpg" class="img-fluid" alt="banner" />
+                            </div>
+                            <h2 class="font-md">News Blogs</h2>
+                        </a>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div>
+                        <a href="javascript:void(0)" class="banner-box">
+                            <div class="img-box">
+                                <img src="assets/images/blog/card/image1.jpg" class="img-fluid" alt="banner" />
+                            </div>
+                            <h2 class="font-md">Games Blogs</h2>
+                        </a>
+                    </div>
+                    <!-- Banner End -->
+                </div>
+            </div>
+            <!-- Thumbnail Slider End -->
+        </section>
+
+
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+        <div class="footer">
+            <ul>
+                <li>
+                    <a href="home.html" class="footer-link"><i data-feather="home"></i> </a>
+                </li>
+                <li>
+                    <a href="about-us.html.html" class="footer-link active"><i data-feather="layers"></i> </a>
+                </li>
+                <li>
+                    <a href="search.html" class="footer-link"><i data-feather="search"></i> </a>
+                </li>
+                <li>
+                    <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Slick Slider js -->
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick-custom.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+</body>
+<!-- Body End -->
+
+</html>
+<!-- Html End -->

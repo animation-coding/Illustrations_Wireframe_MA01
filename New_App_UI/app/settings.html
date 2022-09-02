@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!-- Html Start -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<!-- Head End -->
+
+<!-- Body Start -->
+
+<body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+        <div id="wifi-loader">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+                <circle class="back" cx="43" cy="43" r="40"></circle>
+                <circle class="front" cx="43" cy="43" r="40"></circle>
+                <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+                <circle class="back" cx="30" cy="30" r="27"></circle>
+                <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+            <div class="text" data-text="LOADING..."></div>
+        </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="header">
+        <div>
+            <a href="home.html">
+                <span class="nav-bar">
+                    <i data-feather="chevron-left"></i>
+                </span>
+            </a>
+            <h1 class="title-color font-lg">Settings</h1>
+        </div>
+        <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large setting">
+        <ul>
+            <li class="toggle-sec">
+                <a href="javascript:void(0)" class="media">
+                    <i data-feather="moon"></i>
+                    <div class="media-body">Dark Mode</div>
+                    <svg class="bg-shape">
+                        <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                    </svg>
+                    <i class="d-none" data-feather="chevron-right"></i>
+                </a>
+                <div class="button toggle-btn ms-auto">
+                    <input id="darkButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                        <span></span>
+                    </div>
+                    <div class="layer"></div>
+                </div>
+            </li>
+
+
+
+            <li class="toggle-sec">
+                <a href="javascript:void(0)" class="media">
+                    <img src="assets/images/icon_02/bell.svg" alt="bell" />
+                    <div class="media-body">Notification</div>
+                    <svg class="bg-shape">
+                        <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                    </svg>
+                    <i class="d-none" data-feather="chevron-right"></i>
+                </a>
+                <div class="button toggle-btn ms-auto">
+                    <input id="notificationButton" type="checkbox" class="checkbox" />
+                    <div class="knobs">
+                        <span></span>
+                    </div>
+                    <div class="layer"></div>
+                </div>
+            </li>
+
+            <li>
+                <a href="profile-setting.html" class="media">
+                    <img src="assets/images/icon_02/setting.svg" alt="cog" />
+                    <div class="media-body">Profile Setting</div>
+                    <svg class="bg-shape">
+                        <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                    </svg>
+                    <i data-feather="chevron-right"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="reset-password.html" class="media">
+                    <img src="assets/images/icon_02/eye2.svg" alt="eye" />
+                    <div class="media-body">Change Password</div>
+                    <svg class="bg-shape">
+                        <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                    </svg>
+                    <i data-feather="chevron-right"></i>
+                </a>
+            </li>
+
+            <li data-bs-toggle="offcanvas" data-bs-target="#language" aria-controls="language">
+                <a href="javascript:void(0)" class="media">
+                    <img src="assets/images/icon_02/glob2.svg" alt="glob" />
+                    <div class="media-body">Language</div>
+                    <svg class="bg-shape">
+                        <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                    </svg>
+                    <i data-feather="chevron-right"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="404.html" class="media">
+                    <img src="assets/images/icon_02/element.svg" alt="lock" />
+                    <div class="media-body">Privacy Policy</div>
+                    <svg class="bg-shape">
+                        <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                    </svg>
+                    <i data-feather="chevron-right"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="Intro.html" class="media">
+                    <img src="assets/images/icon_02/logout.svg" alt="logout" />
+                    <div class="media-body">Logout</div>
+                    <svg class="bg-shape">
+                        <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                    </svg>
+                    <i data-feather="chevron-right"></i>
+                </a>
+            </li>
+        </ul>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+        <div class="footer">
+            <ul>
+                <li>
+                    <a href="home.html" class="footer-link"><i data-feather="home"></i> </a>
+                </li>
+                <li>
+                    <a href="about-us.html.html" class="footer-link"><i data-feather="layers"></i> </a>
+                </li>
+                <li>
+                    <a href="search.html" class="footer-link"><i data-feather="search"></i> </a>
+                </li>
+                <li>
+                    <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="footer-link active"><i data-feather="settings"></i> </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Action Language Start -->
+    <div class="action action-language offcanvas offcanvas-bottom" tabindex="-1" id="language"
+        aria-labelledby="language">
+        <div class="offcanvas-body small">
+            <h2 class="m-b-title1 font-md">Select Language</h2>
+            <ul class="row filter-row g-3 g-sm-4">
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/us.svg" alt="us" /> English </a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/in.svg" alt="us" />Indian </a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/it.svg" alt="us" />Italian</a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/tf.svg" alt="us" /> French</a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/cn.svg" alt="us" /> Chines</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas-footer">
+            <div class="btn-box">
+                <a href="javascript:void(0)" class="btn btn-outline" data-bs-dismiss="offcanvas"
+                    aria-label="Close">Cancel</a>
+                <a href="javascript:void(0)" class="btn btn-square" data-bs-dismiss="offcanvas"
+                    aria-label="Close">Apply</a>
+            </div>
+        </div>
+    </div>
+    <!-- Action Language End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+<!-- Html End -->

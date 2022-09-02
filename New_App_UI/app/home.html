@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+    <!-- Slick css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick-theme.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!-- Style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+
+
+    <!-- Loader Start -->
+    <div class="pre-loader">
+        <div id="wifi-loader">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+                <circle class="back" cx="43" cy="43" r="40"></circle>
+                <circle class="front" cx="43" cy="43" r="40"></circle>
+                <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+                <circle class="back" cx="30" cy="30" r="27"></circle>
+                <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+            <div class="text" data-text="LOADING..."></div>
+        </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="header">
+        <div>
+            <span class="nav-bar">
+                <i class="fi fi-rr-apps"></i>
+            </span>
+            <h1 class="title-color font-lg">Home</h1>
+        </div>
+        <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+    <!-- Sidebar Start -->
+    <aside>
+        <a href="javascript:void(0)" class="overlay-sidebar"></a>
+        <div class="header-sidebar">
+            <a href="javascript:void(0)" class="user-panel">
+                <img src="assets/images/avtars/avtar.png" class="img-fluid user-img" alt="">
+                <span>Animation Coding</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-right icli">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </a>
+            <div class="sidebar-content">
+                <ul class="link-section">
+                    <li>
+                        <div>
+                            <div class="content toggle-sec w-100">
+                                <div>
+                                    <h4 class="font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-moon me-4">
+                                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                            </svg></span>
+                                        Dark Mode
+                                    </h4>
+                                </div>
+                                <div class="button toggle-btn ms-auto">
+                                    <input id="darkButton" type="checkbox" class="checkbox">
+                                    <div class="knobs">
+                                        <span></span>
+                                    </div>
+                                    <div class="layer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="content toggle-sec w-100">
+                                <div>
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+
+                                            <img src="assets/images/icon_02/bell.svg" class="me-4"
+                                                alt="rtl"></span>Notification
+                                    </h4>
+                                </div>
+                                <div class="button toggle-btn ms-auto">
+                                    <input id="notificationButton" type="checkbox" class="checkbox">
+                                    <div class="knobs">
+                                        <span></span>
+                                    </div>
+                                    <div class="layer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="profile-setting.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+
+                                            <img src="assets/images/icon_02/setting.svg" class="me-4"
+                                                alt="rtl"></span>Profile
+                                        Setting
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reset-password.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+
+                                            <img src="assets/images/icon_02/eye2.svg" class="me-4"
+                                                alt="eye2"></span>Change
+                                        Password
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#language"
+                            aria-controls="language">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <img src="assets/images/icon_02/glob2.svg" class="me-4"
+                                                alt="rtl"></span>Language
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog-home.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <img src="assets/images/icon_02/blog.svg" class="me-4"
+                                                alt="rtl" /></span>Blog
+                                        page
+                                        <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-list.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <img src="assets/images/icon_02/element.svg" class="me-4"
+                                                alt="rtl"></span>Post<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- Sidebar End -->
+
+    <!-- Main Start -->
+    <main class="main-wrap mb-xl-large grocery-home">
+        <!-- Top Content Section Start -->
+        <section class="top-section " style="margin-top: 12px;">
+            <h2 class="title-2">Discover something new</h2>
+            <!-- Search Box Start -->
+            <div class="search-box">
+                <i class="search" data-feather="search"></i>
+                <input class="form-control" type="search" placeholder="Search here..." />
+                <i class="mic" data-feather="mic"></i>
+            </div>
+            <!-- Search Box End -->
+        </section>
+
+        <section>
+            <!-- Banner Slider Start -->
+            <div class="wrap p-t-sm">
+                <h2 class="title-2 m-b-title1">Top Design</h2>
+                <div class="product-banner-slider banner-slider ratio2_1">
+                    <!-- Banner Start -->
+                    <div class="banner-box">
+                        <div>
+                            <img src="assets/images/e-commerce/banner/banner1.jpg" class="img-fluid bg-img"
+                                alt="banner" />
+                        </div>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div class="banner-box">
+                        <div>
+                            <img src="assets/images/e-commerce/banner/banner2.jpg" class="img-fluid bg-img"
+                                alt="banner" />
+                        </div>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div class="banner-box">
+                        <div>
+                            <img src="assets/images/e-commerce/banner/banner3.jpg" class="img-fluid bg-img"
+                                alt="banner" />
+                        </div>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div class="banner-box">
+                        <div>
+                            <img src="assets/images/e-commerce/banner/banner2.jpg" class="img-fluid bg-img"
+                                alt="banner" />
+                        </div>
+                    </div>
+                    <!-- Banner End -->
+                </div>
+            </div>
+            <!-- Banner Section End -->
+        </section>
+
+
+        <section class="Search">
+            <div class="categories ">
+                <div class="arrow-box mb-md">
+                    <h2 class="title-2">Top Design</h2>
+                    <div>
+                        <button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i
+                                data-feather="chevron-left"></i></button>
+                        <button class="slick-next slick-arrow" aria-label="Next" type="button"><i
+                                data-feather="chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="categories-slide">
+                    <!-- Slide Start -->
+                    <div>
+                        <div class="slide">
+                            <svg class="bg-shape">
+                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                            </svg>
+                            <img src="assets/images/icon_02/web-d.svg" class="img-fluid" alt="note" />
+                            <h3>Web Design</h3>
+                        </div>
+                    </div>
+                    <!-- Slide End -->
+
+                    <!-- Slide Start -->
+                    <div>
+                        <div class="slide">
+                            <svg class="bg-shape">
+                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                            </svg>
+                            <img src="assets/images/icon_02/fig-d.svg" class="img-fluid" alt="note" />
+                            <h3>Figma Desgin</h3>
+                        </div>
+                    </div>
+                    <!-- Slide End -->
+
+                    <!-- Slide Start -->
+                    <div>
+                        <div class="slide">
+                            <svg class="bg-shape">
+                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                            </svg>
+                            <img src="assets/images/icon_02/marketing.svg" class="img-fluid" alt="note" />
+                            <h3>Marketing</h3>
+                        </div>
+                    </div>
+                    <!-- Slide End -->
+
+                    <!-- Slide Start -->
+                    <div>
+                        <div class="slide">
+                            <svg class="bg-shape">
+                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                            </svg>
+                            <img src="assets/images/icon_02/web-d.svg" class="img-fluid" alt="note" />
+                            <h3>Figma Desgin</h3>
+                        </div>
+                    </div>
+                    <!-- Slide End -->
+
+                    <!-- Slide Start -->
+                    <div>
+                        <div class="slide">
+                            <svg class="bg-shape">
+                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                            </svg>
+                            <img src="assets/images/icon_02/fig-d.svg" class="img-fluid" alt="note" />
+                            <h3>Marketing</h3>
+                        </div>
+                    </div>
+                    <!-- Slide End -->
+
+                    <!-- Slide Start -->
+                    <div>
+                        <div class="slide">
+                            <svg class="bg-shape">
+                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                            </svg>
+                            <img src="assets/images/icon_02/marketing.svg" class="img-fluid" alt="note" />
+                            <h3>Web Design</h3>
+                        </div>
+                    </div>
+                    <!-- Slide End -->
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="top-offer p-tb-sm ratio_asos">
+            <h2 class="title-2 m-b-title1">Top Design</h2>
+            <div class="ratio_asos">
+                <!-- Offer Start -->
+                <div class="banner-box bg-size"
+                    style="background-image: url(&quot;assets/images/png/bg.png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; display: block;">
+                    <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="Background"
+                        style="display: none;">
+                    <div class="media">
+                        <div>
+                            <a href="grocery-shop.html"> <img src="assets/images/e-commerce/box1/33.jpg"
+                                    alt="offer"></a>
+                        </div>
+                        <div class="media-body">
+                            <a href="grocery-shop.html">
+                                <h3>illustrator illustration</h3>
+                            </a>
+                            <span class="font-sm badges-lg-square bg-success">watch</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Offer End -->
+
+                <!-- Offer Start -->
+                <div class="banner-box bg-size"
+                    style="background-image: url(&quot;assets/images/png/bg.png&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat; display: block;">
+                    <img src="assets/images/png/bg.png" class="img-fluid bg-img" alt="Background"
+                        style="display: none;">
+                    <div class="media">
+                        <div>
+                            <a href="404.html"> <img src="assets/images/e-commerce/box1/44.jpg" alt="offer"></a>
+                        </div>
+                        <div class="media-body">
+                            <a href="404.html">
+                                <h3>illustrator illustration</h3>
+                            </a>
+                            <span class="font-sm badges-lg-square bg-warning">watch</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Offer End -->
+            </div>
+        </section>
+
+
+        <section>
+            <!-- Thumbnail Slider Start -->
+            <div class="wrap p-tb-sm">
+                <h2 class="title-2 m-b-title1">Top Design</h2>
+                <div class="banner-section thumbnail-slider">
+                    <!-- Banner Start -->
+                    <div>
+                        <a href="javascript:void(0)" class="banner-box">
+                            <div class="img-box">
+                                <img src="assets/images/blog/card/image4.jpg" class="img-fluid" alt="banner" />
+                            </div>
+                            <h2 class="font-md">Music Blogs</h2>
+                        </a>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div>
+                        <a href="javascript:void(0)" class="banner-box">
+                            <div class="img-box">
+                                <img src="assets/images/blog/card/image5.jpg" class="img-fluid" alt="banner" />
+                            </div>
+                            <h2 class="font-md">Beach Blogs</h2>
+                        </a>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div>
+                        <a href="javascript:void(0)" class="banner-box">
+                            <div class="img-box">
+                                <img src="assets/images/blog/card/image3.jpg" class="img-fluid" alt="banner" />
+                            </div>
+                            <h2 class="font-md">Movie Blogs</h2>
+                        </a>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div>
+                        <a href="javascript:void(0)" class="banner-box">
+                            <div class="img-box">
+                                <img src="assets/images/blog/card/image2.jpg" class="img-fluid" alt="banner" />
+                            </div>
+                            <h2 class="font-md">News Blogs</h2>
+                        </a>
+                    </div>
+                    <!-- Banner End -->
+
+                    <!-- Banner Start -->
+                    <div>
+                        <a href="javascript:void(0)" class="banner-box">
+                            <div class="img-box">
+                                <img src="assets/images/blog/card/image1.jpg" class="img-fluid" alt="banner" />
+                            </div>
+                            <h2 class="font-md">Games Blogs</h2>
+                        </a>
+                    </div>
+                    <!-- Banner End -->
+                </div>
+            </div>
+            <!-- Thumbnail Slider End -->
+        </section>
+
+        <section class="page-list-section pt-0" style="padding: 20px;">
+            <h4 class="title-2 font-md">Pages List</h4>
+            <a href="404.html" class="media">
+                <img src="assets/images/e-commerce/4110955.jpg" alt="banner">
+                <div class="media-body">
+                    <h5 class="font-sm title-color">Web Design Pages</h5>
+                    <span class="content-color font-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg> View Now</span>
+                </div>
+            </a>
+
+            <a href="404.html" class="media">
+                <img src="assets/images/e-commerce/4115337.jpg" alt="banner">
+                <div class="media-body">
+                    <h5 class="font-sm title-color">UI UX Pages</h5>
+                    <span class="content-color font-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg> View Now</span>
+                </div>
+            </a>
+
+            <a href="404.html" class="media">
+                <img src="assets/images/e-commerce/4795421.jpg" alt="banner">
+                <div class="media-body">
+                    <h5 class="font-sm title-color">Editor</h5>
+                    <span class="content-color font-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg> View Now</span>
+                </div>
+            </a>
+
+            <a href="blog-home.html" class="media">
+                <img src="assets/images/e-commerce/5298948.jpg" alt="banner">
+                <div class="media-body">
+                    <h5 class="font-sm title-color">Blog Pages</h5>
+                    <span class="content-color font-sm"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg> View Now</span>
+                </div>
+            </a>
+
+        </section>
+
+        <section class="categories p-tb-sm">
+            <h3 class="title-2 m-b-title1">Top Design</h3>
+            <div class="blog-slider item002">
+                <div class="litem01">
+                    <a href="404.html">
+                        <img src="assets/images/icon_02/design.svg" alt="design" />
+                        Design</a>
+                </div>
+                <div class="litem01">
+                    <a href="404.html">
+                        <img src="assets/images/icon_02/news.svg" alt="news" />
+                        Latest News</a>
+                </div>
+                <div class="litem01">
+                    <a href="404.html">
+                        <img src="assets/images/icon_02/tech.svg" alt="tech" />
+                        Technology</a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <!-- Main End -->
+
+
+    <!-- Action Language Start -->
+    <div class="action action-language offcanvas offcanvas-bottom" tabindex="-1" id="language"
+        aria-labelledby="language">
+        <div class="offcanvas-body small">
+            <h2 class="m-b-title1 font-md">Select Language</h2>
+            <ul class="row filter-row g-3 g-sm-4">
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/us.svg" alt="us" /> English </a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/in.svg" alt="us" />Indian </a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/it.svg" alt="us" />Italian</a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/tf.svg" alt="us" /> French</a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/cn.svg" alt="us" /> Chines</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas-footer">
+            <div class="btn-box">
+                <a href="javascript:void(0)" class="btn btn-outline" data-bs-dismiss="offcanvas"
+                    aria-label="Close">Cancel</a>
+                <a href="javascript:void(0)" class="btn btn-square" data-bs-dismiss="offcanvas"
+                    aria-label="Close">Apply</a>
+            </div>
+        </div>
+    </div>
+    <!-- Action Language End -->
+
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+        <div class="footer">
+            <ul>
+                <li>
+                    <a href="home.html" class="footer-link active"><i data-feather="home"></i> </a>
+                </li>
+                <li>
+                    <a href="about-us.html.html" class="footer-link"><i data-feather="layers"></i> </a>
+                </li>
+                <li>
+                    <a href="search.html" class="footer-link"><i data-feather="search"></i> </a>
+                </li>
+                <li>
+                    <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+    <!-- jquery 3.6.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Slick Slider js -->
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick-custom.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

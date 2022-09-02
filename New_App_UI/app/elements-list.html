@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+    <!-- Slick css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/slick-theme.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <!-- Style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+        <div id="wifi-loader">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+                <circle class="back" cx="43" cy="43" r="40"></circle>
+                <circle class="front" cx="43" cy="43" r="40"></circle>
+                <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+                <circle class="back" cx="30" cy="30" r="27"></circle>
+                <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+            <div class="text" data-text="LOADING..."></div>
+        </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="header">
+        <div>
+            <span class="nav-bar">
+                <i class="fi fi-rr-apps"></i>
+            </span>
+            <h1 class="title-color font-lg">Home</h1>
+        </div>
+        <a href="profile-setting.html" class="ms-auto"> <img src="assets/images/avtars/avtar.png" alt="avatar" /></a>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Sidebar Start -->
+    <aside>
+        <a href="javascript:void(0)" class="overlay-sidebar"></a>
+        <div class="header-sidebar">
+            <a href="javascript:void(0)" class="user-panel">
+                <img src="assets/images/avtars/avtar.png" class="img-fluid user-img" alt="">
+                <span>Animation Coding</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-right icli">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </a>
+            <div class="sidebar-content">
+                <ul class="link-section">
+                    <li>
+                        <div>
+                            <div class="content toggle-sec w-100">
+                                <div>
+                                    <h4 class="font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-moon me-4">
+                                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                            </svg></span>
+                                        Dark Mode
+                                    </h4>
+                                </div>
+                                <div class="button toggle-btn ms-auto">
+                                    <input id="darkButton" type="checkbox" class="checkbox">
+                                    <div class="knobs">
+                                        <span></span>
+                                    </div>
+                                    <div class="layer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="content toggle-sec w-100">
+                                <div>
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+
+                                            <img src="assets/images/icon_02/bell.svg" class="me-4"
+                                                alt="rtl"></span>Notification
+                                    </h4>
+                                </div>
+                                <div class="button toggle-btn ms-auto">
+                                    <input id="notificationButton" type="checkbox" class="checkbox">
+                                    <div class="knobs">
+                                        <span></span>
+                                    </div>
+                                    <div class="layer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="profile-setting.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+
+                                            <img src="assets/images/icon_02/setting.svg" class="me-4"
+                                                alt="rtl"></span>Profile
+                                        Setting
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reset-password.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+
+                                            <img src="assets/images/icon_02/eye2.svg" class="me-4"
+                                                alt="eye2"></span>Change
+                                        Password
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#language"
+                            aria-controls="language">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <img src="assets/images/icon_02/glob2.svg" class="me-4"
+                                                alt="rtl"></span>Language
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog-home.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <img src="assets/images/icon_02/blog.svg" class="me-4"
+                                                alt="rtl" /></span>Blog
+                                        page
+                                        <i data-feather="chevron-right" class="arrow-right ms-auto"></i>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-list.html">
+                            <div class="content toggle-sec w-100">
+                                <div class="w-100">
+                                    <h4 class="mb-0 font-sm">
+                                        <span>
+                                            <svg class="bg-shape">
+                                                <use xlink:href="assets/svg/sprite.svg#bg-shape"></use>
+                                            </svg>
+                                            <img src="assets/images/icon_02/element.svg" class="me-4"
+                                                alt="rtl"></span>Post<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-chevron-right arrow-right ms-auto">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- Sidebar End -->
+
+
+
+    <main class="main-wrap mb-xl-large blog-style5">
+        <!-- Blog List Section Start -->
+        <section class="blog-list p-b-sm ratio_40">
+            <!-- Blog Banner Start -->
+            <div class="banner-box">
+                <h2 class="title-2">Progressive Web Apps are the Future of Web Development</h2>
+                <div class="banner">
+                    <div>
+                        <img src="assets/images/blog/video/image1.jpg" class="bg-img" alt="banner" />
+                    </div>
+                    <span class="badges-square bg-danger">technology</span>
+                </div>
+                <div class="banner-content">
+                    <div class="media">
+                        <div>
+                            <img src="assets/images/avtars/avtar.png" class="img-fluid" alt="avatart" />
+                        </div>
+                        <div class="media-body">
+                            <h3>Animation Coding</h3>
+                            <span>Aug 20, 2021</span>
+                        </div>
+                        <i data-feather="share-2"></i>
+                    </div>
+                    <p class="pera">
+                        Progressive Web Applications (PWAs) are continuing to gain traction. A number of brands, such as
+                        Twitter, Starbucks, and Pinterest, have reported a considerable increase in user
+                        engagement levels when they replaced legacy mobile web experiences and native apps with PWAs. In
+                        this article, which is the second in the series of blog posts on this topic, we mention
+                        key PWA features that make progressive web apps are the future of web development, especially
+                        with respect to mobile devices.
+                    </p>
+                    <p class="pera">
+                        At their core, progressive web apps are web applications that leverage contemporary web
+                        techniques for delivering a native and rich app-like and seamless experience to users. PWAs are
+                        web apps featuring progressive enhancement designed to implement nifty features, such as
+                        background sync, caching, splash screen.
+                    </p>
+                    <p class="pera">There are many reasons why PWAs could take over web development, rather than just
+                        being a hype that fades away with time.</p>
+                </div>
+            </div>
+            <!-- Blog Banner End -->
+        </section>
+        <!-- Blog List Section End -->
+
+
+
+        <!-- Leave a Reply Section Start -->
+        <section class="leave-reply p-tb-sm">
+            <h4>Leave a Reply</h4>
+            <p class="pera">Your email address will not be published. Required fields are marked *</p>
+            <!-- Contact Form Start -->
+            <form class="custom-form">
+                <div class="input-box">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="Full Name" class="form-control" required />
+                </div>
+                <div class="input-box">
+                    <i data-feather="at-sign"></i>
+                    <input type="email" placeholder="Email Address" class="form-control" required />
+                </div>
+                <div class="input-box text-box">
+                    <i data-feather="mail"></i>
+                    <textarea placeholder="Type your messages..." class="form-control" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-square form-control">Post Comment</button>
+            </form>
+            <!-- Contact Form End -->
+        </section>
+        <!-- Leave a Reply Section End -->
+
+        <!-- Related Articles Section Start -->
+        <section class="related-articles p-tb-sm">
+            <h4>Related Articles</h4>
+            <div class="topic-box">
+                <!-- Topic Start -->
+                <div class="topic">
+                    <div class="media">
+                        <div>
+                            <img src="assets/images/blog/card/image4.jpg" alt="image" />
+                        </div>
+                        <div class="media-body">
+                            <h4 class="font-sm font-danger">UX/UI Design</h4>
+                            <p class="font-md">10 tips to grow your blog's audience</p>
+                            <div>
+                                <span><i data-feather="user"></i> by Mark jeckno </span>
+                                <span><i data-feather="clock"></i>25/05/21 </span>
+                            </div>
+                            <span><i data-feather="bookmark"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Topic End -->
+
+                <!-- Topic Start -->
+                <div class="topic">
+                    <div class="media">
+                        <div>
+                            <img src="assets/images/blog/card/image8.jpg" alt="image" />
+                        </div>
+                        <div class="media-body">
+                            <h4 class="font-sm font-danger">UX/UI Design</h4>
+                            <p class="font-md">10 tips to grow your blog's audience</p>
+                            <div>
+                                <span><i data-feather="user"></i> by Mark jeckno </span>
+                                <span><i data-feather="clock"></i>25/05/21 </span>
+                            </div>
+                            <span><i data-feather="bookmark"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Topic End -->
+            </div>
+        </section>
+        <!-- Related Articles Section End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wrap">
+        <div class="footer">
+            <ul>
+                <li>
+                    <a href="home.html" class="footer-link"><i data-feather="home"></i> </a>
+                </li>
+                <li>
+                    <a href="about-us.html.html" class="footer-link"><i data-feather="layers"></i> </a>
+                </li>
+                <li>
+                    <a href="search.html" class="footer-link"><i data-feather="search"></i> </a>
+                </li>
+                <li>
+                    <a href="pages.html" class="footer-link"><i data-feather="file-text"></i> </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="footer-link"><i data-feather="settings"></i> </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Action Language Start -->
+    <div class="action action-language offcanvas offcanvas-bottom" tabindex="-1" id="language"
+        aria-labelledby="language">
+        <div class="offcanvas-body small">
+            <h2 class="m-b-title1 font-md">Select Language</h2>
+            <ul class="row filter-row g-3 g-sm-4">
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/us.svg" alt="us" /> English </a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/in.svg" alt="us" />Indian </a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/it.svg" alt="us" />Italian</a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/tf.svg" alt="us" /> French</a>
+                    </div>
+                </li>
+                <li class="col-12">
+                    <div class="filter-col">
+                        <a href="javascript:void(0)"> <img src="assets/images/icon/flag/cn.svg" alt="us" /> Chines</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas-footer">
+            <div class="btn-box">
+                <a href="javascript:void(0)" class="btn btn-outline" data-bs-dismiss="offcanvas"
+                    aria-label="Close">Cancel</a>
+                <a href="javascript:void(0)" class="btn btn-square" data-bs-dismiss="offcanvas"
+                    aria-label="Close">Apply</a>
+            </div>
+        </div>
+    </div>
+    <!-- Action Language End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Slick Slider js -->
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick-custom.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

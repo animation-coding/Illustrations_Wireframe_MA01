@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<!-- Head End -->
+
+<!-- Body Start -->
+
+<body>
+    <!-- Loader Start -->
+    <div class="pre-loader">
+        <div id="wifi-loader">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+                <circle class="back" cx="43" cy="43" r="40"></circle>
+                <circle class="front" cx="43" cy="43" r="40"></circle>
+                <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+                <circle class="back" cx="30" cy="30" r="27"></circle>
+                <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+            <div class="text" data-text="LOADING..."></div>
+        </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header>
+        <div class="header-section login-page">
+            <div class="banner-box ratio-83">
+                <div>
+                    <img src="assets/images/png/bg2.png" class="bg-img header-bg img-fluid" alt="bg" />
+                </div>
+            </div>
+
+            <!-- Dote Shape Start -->
+            <div class="dote top">
+                <img src="assets/svg/dotes.svg" class="img-fluid" alt="dotes" />
+            </div>
+            <!-- Dote Shape End -->
+
+            <!-- Round Shape Start -->
+            <div class="round-top">
+                <img src="assets/svg/round.svg" class="img-fluid" alt="round" />
+            </div>
+            <!-- Round Shape End -->
+
+            <div class="banner-img">
+                <img src="assets/svg/login.svg" alt="svg" />
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="p-b-lg login-page main-wrap p-t-md">
+        <section class="login-section">
+            <!-- Register Form Start -->
+            <form action="login.html" class="custom-form">
+                <h1 class="font-xl">Register Account</h1>
+
+                <!-- Full Name Input start -->
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required="" class="form-control">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-user">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <!-- Full Name Input End -->
+
+                <!-- Email Input start -->
+                <div class="input-box">
+                    <input type="email" placeholder="Email Address" required="" class="form-control">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-at-sign">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+                    </svg>
+                </div>
+                <!-- Email Input End -->
+
+                <!-- Password Input start -->
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required="" class="form-control">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-lock">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                </div>
+                <!-- Password Input End -->
+
+                <button type="submit" class="btn btn-square">Sign in</button>
+
+                <span class="content-color font-sm d-block text-center">Already have an Account? <a href="login.html">
+                        Sign In </a></span>
+            </form>
+            <!-- Register Form End -->
+        </section>
+
+        <!-- Social Section Start -->
+        <div class="socila-section">
+            <span>
+                <span class="font-sm content-color"> Or login with </span>
+            </span>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-skype'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxl-discord-alt'></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- Social Section End -->
+
+        <!-- Dote Shape Start -->
+        <div class="dote dote-bottom">
+            <img src="assets/svg/dotes.svg" class="img-fluid" alt="dotes" />
+        </div>
+        <!-- Dote Shape End -->
+
+        <!-- Round Shape Start -->
+        <div class="round-bottom">
+            <img src="assets/svg/round.svg" class="img-fluid" alt="round" />
+        </div>
+        <!-- Round Shape End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- jquery 3.6.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- Theme Setting js -->
+    <script src="assets/js/theme-setting.js"></script>
+
+    <!-- Script js -->
+    <script src="assets/js/script.js"></script>
+</body>
+<!-- Body End -->
+
+
+</html>
